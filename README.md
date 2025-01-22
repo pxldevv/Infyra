@@ -1,6 +1,6 @@
 # Infyra ✨🚀
 
-Infyra is a selfbot built with Discord.js v13, offering various features like avatar fetching and ping commands. It’s designed with a modular command and event handler system for easy expansion.
+Infyra is a selfbot built with [Selfbot Discord.js v13](https://github.com/aiko-chan-ai/discord.js-selfbot-v13/), offering various features like avatar fetching and ping commands. It’s designed with a modular command and event handler system for easy expansion.
 
 ## Features
 
