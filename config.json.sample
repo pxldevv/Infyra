@@ -1,0 +1,5 @@
+{
+    "token":"YOUR_DISCORD_TOKEN",
+    "prefix": ">p7",
+    "owners": ["YOUR_DISCORD_ID"]
+}
