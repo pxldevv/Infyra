@@ -1,8 +1,8 @@
 module.exports = async (client, message) => {
-    const { prefix } = require('../config.json');
+    const { prefix, owners } = require('../config.json');
     const allowedUsers = require('../allowed.json');
 
-    if (!message.content.startsWith(prefix) || !allowedUsers.includes(message.author.id)) return;
+    if (!message.content.startsWith(prefix) || !allowedUsers.includes(message.author.id) && !owners.includes(message.author.id)) return;
 
     const args = message.content.slice(prefix.length).trim().split(/ +/);
     const commandName = args.shift().toLowerCase();
