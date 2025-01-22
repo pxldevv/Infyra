@@ -3,7 +3,7 @@ module.exports = {
     aliases: ['av', 'profilepic'],
     description: 'Replies with the user\'s avatar URL!',
     async execute(message, args, client) {
-        const userID = args[0]?.match(/\d+/)?.[0];
+        const userID = args[0]?.match(/\d+/)?.[0] || message.author.id;
         let size = 256;
 
         const validSizes = [16, 32, 64, 128, 256, 512, 1024, 2048, 4096];
@@ -27,7 +27,7 @@ module.exports = {
                     await message.reply(fallbackAvatar);
                 } else {
                     if (avatarURL.startsWith('https://cdn.discordapp.com/avatars/') && avatarURL.includes('a_')) {
-                        avatarURL = avatarURL.replace('.webp', '.gif');
+                        avatarURL = avatarURL.replace('.png', '.gif');
                     }
                     avatarURL = `${avatarURL}`;
                     await message.reply(avatarURL);
