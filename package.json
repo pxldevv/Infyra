@@ -1,0 +1,24 @@
+{
+  "name": "infyra",
+  "version": "1.0.0",
+  "description": "discord js selfbot",
+  "homepage": "https://github.com/(n/a)#readme",
+  "bugs": {
+    "url": "https://github.com/(n/a)/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/(n/a).git"
+  },
+  "license": "ISC",
+  "author": "pxldevv",
+  "type": "commonjs",
+  "main": "app.js",
+  "scripts": {
+    "test": "nodemon . --ignore '*.json'"
+  },
+  "dependencies": {
+    "discord.js-selfbot-v13": "^3.5.1"
+  },
+  "devDependencies": {}
+}
